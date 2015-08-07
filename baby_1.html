@@ -1,14 +1,21 @@
 <head>
-  <title>baby_1</title>
+  <title>Baby sitters</title>
 </head>
-
+ 
 <body>
-  <h1>Welcome to Sitter Finder</h1>
-
-  {{> hello}}
+  <div class="container">
+    <header>
+      <h1>Sitters</h1>
+    </header>
+   The following are baby sitters available in your area.
+    <ul>
+      {{#each sitters}}
+        {{>sitter}}
+      {{/each}}
+    </ul>
+  </div>
 </body>
-
-<template name="hello">
-  <button>Click Me</button>
-  <p>You've pressed the button {{counter}} times.</p>
+ 
+<template name="sitter">
+  <li>{{name}} is rated with {{rating}}</li>
 </template>
