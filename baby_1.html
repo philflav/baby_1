@@ -6,8 +6,14 @@
   <div class="container">
     <header>
       <h1>Sitters</h1>
+
+      <form class="new-sitter">
+        <input type="text" name="name" placeholder="Type to add new sitter" />
+      </form>
+      <hr>
     </header>
    The following are baby sitters available in your area.
+   <br>
     <ul>
       {{#each sitters}}
         {{>sitter}}
@@ -17,5 +23,5 @@
 </body>
  
 <template name="sitter">
-  <li>{{name}} is rated with {{rating}}</li>
+  <li>{{name}} is rated {{rating}} and is located in {{location}}</li>
 </template>
