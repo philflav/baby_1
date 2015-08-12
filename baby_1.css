@@ -1,1 +1,17 @@
 /* CSS declarations go here */
+.bluehead {
+	background: rgb(55,55,255);
+	text-align: center;
+	color: rgb(255,255,255);
+}
+.profile_sum {
+
+	background-color: rgb(210,210,230);
+	text-align: left;
+	color: rgb(100,100,100);
+}
+.plain {
+	background-color: rgb(240,240,240);
+	text-align: left;
+	color: rgb(30,30,30);
+}

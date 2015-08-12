@@ -1,0 +1,20 @@
+<template name="profiles">
+<title>Profile List Page</title>
+<body>
+<h3>Search Results </h3>
+
+<hr class="">
+
+	{{#each profiles}}
+	<div class ="profile_sum">
+        <a href="/profile/{{_id}}">{{ProfileTitle}}</a><br>
+        Gender: {{gender}}<br>
+        Age: {{age}}<br>
+    </div>
+    <div class="plain">
+        Last login: {{lastlogin}}<br>
+   	</div>
+        {{/each}}
+
+</body>
+</template>
