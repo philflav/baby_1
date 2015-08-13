@@ -1,27 +1,21 @@
 /* CSS declarations go here */
 .bluehead {
-	width: 500px;
+	width: 568px;
 	background: rgb(155,155,255);
 	text-align: center;
 	color: rgb(255,255,255);
 }
 .redhead {
-	width: 500px;
+	width: 568px;
 	background: rgb(255,155,155);
 	text-align: center;
 	color: rgb(255,255,255);
 }
 .greenhead {
-	width: 500px;
+	width: 568px;
 	background: rgb(155,255,155);
 	text-align: center;
 	color: rgb(255,255,255);
-}
-.profile_sum {
-
-	background-color: rgb(210,210,230);
-	text-align: left;
-	color: rgb(100,100,100);
 }
 .plain {
 	background-color: rgb(240,240,240);
@@ -29,8 +23,25 @@
 	color: rgb(30,30,30);
 }
 .my_container {
-	width: 500px;
-	padding-left: 50px;
-	background-color: :rgb(235,235,235)
+	width: 568px;
+	padding-left: 10px;
+	background-color:#eeeeee;
 	text-align: left;
+}
+.search_button{
+	width:200px;
+	font-size: 50px;
+	background-color: rgb(0,0,180);
+	color: rgb(255,255,255);
+	border: 10px;
+	padding-top: 5px;
+}
+.profiles_button{
+	width:200px;
+	font-size: 50px;
+	background-color: rgb(0,180,0);
+	color: rgb(255,255,255);
+	border: 10px;
+	padding-top: 5px;
+	
 }

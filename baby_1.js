@@ -2,8 +2,20 @@ Profiles = new Mongo.Collection("profiles");
 
 //Routes
 
-Router.route('/');
+Router.route('/',{
+  template: 'login'
+});
+Router.route('/register');
 Router.route('/search');
+Router.route('/home');
+Router.route('/editProfile');
+Router.route('/messages');
+Router.route('/subscription');
+Router.route('/favourites');
+Router.route('/likesMe');
+Router.route('/lookedAt');
+Router.route('/lookedAtMe');
+Router.route('/logout');
 Router.route('/results' ,{
   template: 'profiles'
 });
@@ -51,4 +63,41 @@ if (Meteor.isClient) {
       event.target.name.value = "";
     }
   });
+
+Template.register.events({
+    'submit form': function(event){
+        event.preventDefault();
+        var email = $('[name=email]').val();
+        var password = $('[name=password]').val();
+        Accounts.createUser({
+            email: email,
+            password: password
+        });
+        Router.go('home');
+    }
+});
+Template.home.events({
+    'click .logout': function(event){
+      console.log('Logout clicked');
+        event.preventDefault();
+        Meteor.logout();
+        Router.go('/');
+    }
+});
+Template.login.events({
+    'submit form': function(event){
+      console.log('Login clicked');
+        event.preventDefault();
+        var email = $('[name=email]').val();
+        var password = $('[name=password]').val();
+        Meteor.loginWithPassword(email, password, function(error){
+          if(error){
+            console.log(error.reason);
+          } else {
+          Router.go("/home");
+          }
+        }
+        );
+      }
+    });
 }
