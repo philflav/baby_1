@@ -1,7 +1,9 @@
 <template name="home">
 <div class="home_head">
-	Logged in as <br>
-	{{currentUser}}
+	{{#if currentUser}} 
+	Logged in as 
+  		{{> user}}
+	{{/if}}
 	<br>
 </div>
 
