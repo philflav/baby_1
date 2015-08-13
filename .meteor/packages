@@ -10,3 +10,6 @@ insecure
 accounts-meteor-developer
 twbs:bootstrap
 iron:router
+mrt:imagemagick
+accounts-password
+accounts-ui
