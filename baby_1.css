@@ -1,6 +1,19 @@
 /* CSS declarations go here */
 .bluehead {
-	background: rgb(55,55,255);
+	width: 500px;
+	background: rgb(155,155,255);
+	text-align: center;
+	color: rgb(255,255,255);
+}
+.redhead {
+	width: 500px;
+	background: rgb(255,155,155);
+	text-align: center;
+	color: rgb(255,255,255);
+}
+.greenhead {
+	width: 500px;
+	background: rgb(155,255,155);
 	text-align: center;
 	color: rgb(255,255,255);
 }
@@ -14,4 +27,10 @@
 	background-color: rgb(240,240,240);
 	text-align: left;
 	color: rgb(30,30,30);
+}
+.my_container {
+	width: 500px;
+	padding-left: 50px;
+	background-color: :rgb(235,235,235)
+	text-align: left;
 }
